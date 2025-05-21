@@ -3,10 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making">
-  <meta name="keywords" content="MDAgents, Medical Decision Making, Multi-LLM Collaboration">
+        content="VocalAgent: Large Language Models for Vocal Health Diagnostics with Safety-Aware Evaluation">
+  <meta name="keywords"
+        content="VocalAgent, Medical Speech LLM, Multi-Modal LLM">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MDAgents: An Adaptive Collaboration of LLMs for Medical Decision-Making</title>
+  <title>VocalAgent: Large Language Models for Vocal Health Diagnostics with Safety-Aware Evaluation</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -32,7 +33,7 @@
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/bed-svgrepo-com.svg">
+  <link rel="icon" href="data:,">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -51,3 +52,169 @@
     </a>
   </div>
 </nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">VocalAgent: Large Language Models for Vocal Health Diagnostics with Safety-Aware Evaluation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ybkim95.github.io/">Yubin Kim</a><sup>1</sup>,</span>
+            <span class="author-block">
+              <a href="data:,">Taehan Kim</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="data:,">Wonjune Kang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="data:,">Eugene Park</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="data:,">Joonsik Yoon</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="data:,">Dongjae Lee</a><sup>5</sup>,
+            </span>
+            <span class="author-block">
+              <a href="data:,">Xin Liu</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="data:,">Daniel McDuff</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="data:,">Hyeonhoon Lee</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="data:,">Cynthia Breazeal</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              <a href="data:,">Hae Won Park</a><sup>1</sup>,
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Massachusetts Institute of Technology</span>
+            <span class="author-block"><sup>2</sup>Seoul National University Hospital</span>
+            <span class="author-block"><sup>3</sup>Google</span>
+            <span class="author-block"><sup>4</sup>Independent Researcher</span>
+            <span class="author-block"><sup>5</sup>Doctor Diary</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2505.13577"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2505.13577"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- <span class="link-block">
+                <a href="data:,"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (TBD)</span>
+                  </a>
+              </span> -->
+            </div>
+            <!-- <div class="is-size-5 publication-news">
+              <br>
+              <p>
+                🎉 <strong>News:</strong> Our paper has been accepted at INTERSPEECH 2025!
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="./static/images/FlowDiagram.png" width="100%" alt="Main Flow Diagram of VocalAgent">
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">VocalAgent</span> is a multi-modal LLM-based framework that integrates voice and text to deliver medical assessments for vocal disorders.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Vocal health plays a crucial role in peoples' lives, significantly impacting their communicative abilities and interactions. However, despite the global prevalence of voice disorders, many lack access to convenient diagnosis and treatment. This paper introduces VocalAgent, an audio large language model (LLM) to address these challenges through vocal health diagnosis. We leverage Qwen-Audio-Chat fine-tuned on three datasets collected in-situ from hospital patients, and present a multifaceted evaluation framework encompassing a safety assessment to mitigate diagnostic biases, cross-lingual performance analysis, and modality ablation studies. VocalAgent demonstrates superior accuracy on voice disorder classification compared to state-of-the-art baselines. Its LLM-based  method offers a scalable solution for broader adoption of health diagnostics, while underscoring the importance of ethical and technical validation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3">Main Result</h2>
+          <p>
+            Comparison of macro-F1 scores for VocalAgent and baseline models across the AIHub, VOICED, and AVFAD datasets. VocalAgent consistently outperformed baseline models across all datasets. On AIHub, it achieved 67.0 ± 1.0 accuracy and 55.0 ± 5.0 macro-F1, surpassing HuBERT (63.2 ± 4.3). On VOICED, it reached 72.0 ± 4.0 accuracy and 47.0 ± 2.0 macro-F1, outperforming other models. Most notably, VocalAgent excelled on AVFAD with 89.2% accuracy and 89.1 macro-F1, demonstrating balanced performance across disorder categories, which is critical for clinical use. Compared to other models, VocalAgent delivered more stable and consistent results, validated by lower standard deviations in both accuracy and macro-F1.
+          </p>
+          <img src="./static/images/main_results.png" alt="Voice Disorder Classification">
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="title is-3">Safety Evaluation</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              We evaluated the safety of VocalAgent across multiple policy areas, focusing on its robustness and reliability in handling safety-critical scenarios. We compared VocalAgent with GPT-4o Audio and Gemini 2.0 Flash models on the AIHub dataset using the evaluation techniques from <a href="https://openai.com/index/deliberative-alignment/" target="_blank">"Deliberative alignment: Reasoning enables safer language models".</a> The overall results are shown in the table below. Notably, VocalAgent demonstrated reasonable performance across all metrics compared to the production LLMs, despite not having undergone the same extensive alignment processes to further enhance its safety.
+            </p>
+            <img src="./static/images/safety_evaluations.png" alt="VoiceAgent Safety Evaluation">      
+          </div>
+        </div>
+      </div>
+    </div>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    
+    <pre><code>@misc{kim2025vocalagentllmvocalhealthdiagnostics,
+      title={VocalAgent: Large Language Models for Vocal Health Diagnostics with Safety-Aware Evaluation}, 
+      author={Yubin Kim and Taehan Kim and Wonjune Kang and Eugene Park and Joonsik Yoon and Dongjae Lee and Xin Liu and Daniel McDuff and Hyeonhoon Lee and Cynthia Breazeal and Hae Won Park},
+      year={2025},
+      eprint={2505.13577},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.13577}
+    }</code></pre>
+  </div>
+</section>
+
+</body>
+</html>
